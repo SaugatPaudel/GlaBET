@@ -42,17 +42,17 @@ __date__ = '6 March 2017'
 # Paths
 
 # Full Path to the glacier outline shapefile.
-glacierOutlineFullPath = '/home/saugat/GlaBET v1.2/examples/Mera/Mera_utm.shp'
+glacierOutlineFullPath = 'Place the path to the glacier outline shapefile here.'
 
 # Full Path to the glacier DEM file. The DEM should preferably have same extent as the outline.
-demFullPath = '/home/saugat/GlaBET v1.2/examples/Mera/Mera_utm.tif'
+demFullPath = 'Place the path to the glacier DEM here.'
 
 # Full path to the desired output folder.
-outputFolder = '/home/saugat/GlaBET v1.2/examples/Mera/output'
+outputFolder = 'Place the path to the output folder here.'
 
 # Parameters
-density = 870  # In kilograms per square meters. Default: 870
-f = 0.9  # Dimensionless. Default: 0.9
+density = 900  # In kilograms per cubic meters. Default: 900
+f = 0.8  # Dimensionless. Default: 0.8
 g = 9.81  # Acceleration due to gravity in meters per seconds squared. Default: 9.81
 
 # ======================================================================================================================
@@ -71,6 +71,8 @@ the nnbathy algorithm was compiled.
 
 Look in the 'nnbathy' help/readme to find out more about compilation
 '''
+
+# Give the relative path to the 'nnbathy' interpolation algorithm here. Edit 'nnbathy/nnbathy' part.
 nnPATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'nnbathy/nnbathy')
 
 
